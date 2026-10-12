@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Basag Katahimikan: a gender-responsive platform on Violence Against Women and Children (VAWC) in the Philippines — know the signs, know the law, know where to get help.">
+  <meta name="theme-color" content="#3b1f3a">
+  <title>Basag Katahimikan | End VAWC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SAFETY: Quick Exit button (also triggered by pressing Esc twice) -->
+  <button class="quick-exit" id="quickExit" aria-label="Quick exit: leave this site immediately">
+    ✕ Quick Exit
+  </button>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo" aria-label="Basag Katahimikan home">
+        <span class="logo-mark">◐</span> Basag<span class="logo-accent">Katahimikan</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">What is VAWC</a></li>
+        <li><a href="#stats">Statistics</a></li>
+        <li><a href="#laws">Laws</a></li>
+        <li><a href="#myths">Myths</a></li>
+        <li><a href="#check">Self-Check</a></li>
+        <li><a href="#help" class="nav-cta">Get Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Gender &amp; Society Advocacy · Violence Against Women and Children</p>
+          <h1>Ang pananakit ay <em>hindi</em> pagmamahal.</h1>
+          <p class="hero-sub">Violence against women and children is not a private family matter — it is a public crime under Philippine law. Learn the signs, know your rights, and find out how to help.</p>
+          <div class="hero-actions">
+            <a href="#help" class="btn btn-primary">I need help now</a>
+            <a href="#about" class="btn btn-ghost">Learn more ↓</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <p class="hero-card-label">In the Philippines</p>
+          <p class="hero-big"><span class="counter" data-target="17" data-decimals="0">0</span>%</p>
+          <p>of women aged 15–49 have experienced physical, sexual, or emotional violence from a husband or partner.</p>
+          <p class="source-tag">Source: PSA, 2022 NDHS <a href="#ref-1">[1]</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT IS VAWC ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Know the issue</p>
+          <h2>What is VAWC?</h2>
+          <p class="lead">Under <strong>Republic Act No. 9262</strong>, VAWC is any act or series of acts committed by a person against a woman who is his wife, former wife, or with whom he has or had a sexual or dating relationship, or with whom he has a common child — or against her child — resulting in physical, sexual, psychological harm or suffering, or economic abuse. <a href="#ref-4">[4]</a></p>
+        </div>
+
+        <p class="hint reveal">Tap or click a card to see examples.</p>
+        <div class="forms-grid">
+          <button class="form-card reveal" aria-expanded="false">
+            <span class="form-icon">✋</span>
+            <h3>Physical Violence</h3>
+            <p class="form-short">Acts that cause bodily harm.</p>
+            <ul class="form-more">
+              <li>Hitting, slapping, kicking, pushing</li>
+              <li>Choking, burning, or using weapons</li>
+              <li>Throwing objects at the person</li>
+            </ul>
+          </button>
+          <button class="form-card reveal" aria-expanded="false">
+            <span class="form-icon">⚠</span>
+            <h3>Sexual Violence</h3>
+            <p class="form-short">Acts that are sexual in nature, done without consent.</p>
+            <ul class="form-more">
+              <li>Rape, sexual harassment, unwanted touching</li>
+              <li>Forcing her or her child to watch obscene material</li>
+              <li>Forcing sex through threats or intimidation — even within marriage</li>
+            </ul>
+          </button>
+          <button class="form-card reveal" aria-expanded="false">
+            <span class="form-icon">💬</span>
+            <h3>Psychological Violence</h3>
+            <p class="form-short">Acts that cause mental or emotional suffering.</p>
+            <ul class="form-more">
+              <li>Intimidation, threats, stalking, public ridicule</li>
+              <li>Repeated verbal abuse and humiliation</li>
+              <li>Marital infidelity, or denying custody/visitation of children</li>
+            </ul>
+          </button>
+          <button class="form-card reveal" aria-expanded="false">
+            <span class="form-icon">₱</span>
+            <h3>Economic Abuse</h3>
+            <p class="form-short">Acts that make a woman financially dependent.</p>
+            <ul class="form-more">
+              <li>Stopping her from working or earning</li>
+              <li>Withholding financial support for her or the children</li>
+              <li>Controlling all of her money or property</li>
+            </ul>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATISTICS ========== -->
+    <section class="section section-dark" id="stats">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">By the numbers</p>
+          <h2>The scale of the problem</h2>
+          <p class="lead">Behind every number is a woman or a child. And many cases are never reported.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat reveal">
+            <p class="stat-num"><span class="counter" data-target="17" data-decimals="0">0</span>%</p>
+            <p>of Filipino women (15–49) have experienced physical, sexual, or emotional violence from a husband or partner.</p>
+            <a class="stat-src" href="#ref-1">PSA 2022 NDHS [1]</a>
+          </div>
+          <div class="stat reveal">
+            <p class="stat-num"><span class="counter" data-target="15.3" data-decimals="1">0</span>%</p>
+            <p>have experienced <strong>emotional</strong> violence from a partner — the most common form.</p>
+            <a class="stat-src" href="#ref-1">PSA 2022 NDHS [1]</a>
+          </div>
+          <div class="stat reveal">
+            <p class="stat-num"><span class="counter" data-target="80" data-decimals="0">0</span>%</p>
+            <p>of Filipino children and youth have experienced at least one form of violence in their lifetime.</p>
+            <a class="stat-src" href="#ref-3">NBS-VAC [3]</a>
+          </div>
+          <div class="stat reveal">
+            <p class="stat-num">&lt;<span class="counter" data-target="10" data-decimals="0">0</span>%</p>
+            <p>of young people who experienced abuse ever told anyone about it.</p>
+            <a class="stat-src" href="#ref-3">NBS-VAC [3]</a>
+          </div>
+        </div>
+
+        <div class="chart-card reveal">
+          <h3>VAW cases reported to the PNP</h3>
+          <p class="chart-sub">Number of violence-against-women cases recorded in the PNP crime information system (CIRAS)</p>
+          <div class="bar-chart" role="img" aria-label="Bar chart: 13,830 cases in 2021; 11,307 in 2022; 13,213 in 2023">
+            <div class="bar-row"><span class="bar-label">2021</span><div class="bar-track"><div class="bar" data-value="13830"></div></div><span class="bar-val">13,830</span></div>
+            <div class="bar-row"><span class="bar-label">2022</span><div class="bar-track"><div class="bar" data-value="11307"></div></div><span class="bar-val">11,307</span></div>
+            <div class="bar-row"><span class="bar-label">2023</span><div class="bar-track"><div class="bar" data-value="13213"></div></div><span class="bar-val">13,213</span></div>
+          </div>
+          <p class="source-tag">Source: PSA Fact Sheet on Women and Men (2024), PNP CIRAS data as of Feb. 2024 <a href="#ref-2">[2]</a></p>
+        </div>
+
+        <div class="child-facts reveal">
+          <h3>For children, violence often happens where they should feel safest</h3>
+          <div class="child-grid">
+            <div><strong>1 in 3</strong><span>children experience physical violence — more than half of it at home</span></div>
+            <div><strong>3 in 5</strong><span>experience psychological violence such as verbal abuse, threats, or neglect</span></div>
+            <div><strong>1 in 5</strong><span>children below 18 have experienced sexual violence</span></div>
+            <div><strong>~1 in 2</strong><span>experience violence online, including sexual violence or cyberbullying</span></div>
+          </div>
+          <p class="source-tag">Source: Council for the Welfare of Children &amp; UNICEF, National Baseline Study on VAC <a href="#ref-5">[5]</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LAWS ========== -->
+    <section class="section" id="laws">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Know the law</p>
+          <h2>Laws that protect women and children</h2>
+          <p class="lead">The Philippines has strong laws against VAWC. Knowing them is the first step to using them.</p>
+        </div>
+
+        <div class="accordion reveal" id="lawAccordion">
+          <div class="acc-item open">
+            <button class="acc-head" aria-expanded="true">
+              <span><strong>RA 9262</strong> — Anti-Violence Against Women and Their Children Act of 2004</span><span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <ul>
+                <li><strong>VAWC is a public crime</strong> — a complaint may be filed by any citizen with personal knowledge of the incident, not only the victim (Sec. 25).</li>
+                <li><strong>Covers dating relationships</strong> — not just marriage. Boyfriends, ex-boyfriends, live-in partners and fathers of the woman's child are covered (Sec. 3).</li>
+                <li><strong>Penalties</strong> include imprisonment, a fine of ₱100,000 to ₱300,000, and mandatory psychological counseling or psychiatric treatment (Sec. 6).</li>
+                <li><strong>Battered Woman Syndrome</strong> is recognized as a valid defense (Sec. 26).</li>
+                <li>Victims are entitled to up to <strong>10 days of paid leave</strong> in addition to other leave benefits (Sec. 43).</li>
+              </ul>
+              <a class="ref-link" href="#ref-4">Read the full law [4]</a>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span><strong>RA 7610</strong> — Special Protection of Children Against Abuse, Exploitation and Discrimination Act (1992)</span><span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>Provides stronger penalties for child abuse, child prostitution, trafficking, and other acts harmful to a child's development. It is the main child protection law in the country.</p>
+              <a class="ref-link" href="#ref-6">Read the full law [6]</a>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span><strong>RA 9710</strong> — Magna Carta of Women (2009)</span><span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>A comprehensive women's human rights law that affirms women's right to protection from all forms of violence and requires government, including local government units, to set up services for victim-survivors such as VAW desks in every barangay.</p>
+              <a class="ref-link" href="#ref-7">Read the full law [7]</a>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span><strong>RA 11313</strong> — Safe Spaces Act (2019)</span><span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>Penalizes gender-based sexual harassment in streets and public spaces, online, in workplaces, and in schools — including catcalling, wolf-whistling, and unwanted sexual remarks.</p>
+              <a class="ref-link" href="#ref-8">Read the full law [8]</a>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span><strong>RA 11648</strong> — Raising the age of sexual consent (2022)</span><span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>Raised the age for determining statutory rape from 12 to 16 years old, giving stronger protection to children against sexual abuse.</p>
+              <a class="ref-link" href="#ref-9">Read the full law [9]</a>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-head" aria-expanded="false">
+              <span><strong>RA 11930</strong> — Anti-Online Sexual Abuse or Exploitation of Children (OSAEC) Act (2022)</span><span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>Penalizes online sexual abuse and exploitation of children and the production and distribution of child sexual abuse materials, and places duties on internet service providers and platforms to help stop it.</p>
+              <a class="ref-link" href="#ref-10">Read the full law [10]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Protection Orders tabs -->
+        <div class="po-card reveal">
+          <h3>Protection Orders under RA 9262</h3>
+          <p class="chart-sub">A protection order stops the abuser from further harming, contacting, or coming near the victim.</p>
+          <div class="tabs" role="tablist">
+            <button class="tab active" role="tab" aria-selected="true" data-tab="bpo">BPO</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="tpo">TPO</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="ppo">PPO</button>
+          </div>
+          <div class="tab-panel active" id="bpo" role="tabpanel">
+            <h4>Barangay Protection Order</h4>
+            <p><strong>Issued by:</strong> the Punong Barangay (or a Barangay Kagawad if the Punong Barangay is unavailable)</p>
+            <p><strong>Valid for:</strong> 15 days</p>
+            <p>The fastest form of protection. Orders the abuser to stop committing or threatening physical harm. Go to your Barangay VAW Desk.</p>
+          </div>
+          <div class="tab-panel" id="tpo" role="tabpanel">
+            <h4>Temporary Protection Order</h4>
+            <p><strong>Issued by:</strong> the court (Family Court or Regional Trial Court)</p>
+            <p><strong>Valid for:</strong> 30 days, extendable</p>
+            <p>Can include orders to stay away from the victim, leave the shared home, give temporary custody of children, and provide financial support.</p>
+          </div>
+          <div class="tab-panel" id="ppo" role="tabpanel">
+            <h4>Permanent Protection Order</h4>
+            <p><strong>Issued by:</strong> the court, after a hearing</p>
+            <p><strong>Valid:</strong> until revoked by the court</p>
+            <p>Long-term protection that can include all the reliefs of a TPO, made permanent.</p>
+          </div>
+          <p class="source-tag">Source: RA 9262, Secs. 8, 14–16 <a href="#ref-4">[4]</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MYTHS VS FACTS ========== -->
+    <section class="section section-tint" id="myths">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Break the myths</p>
+          <h2>Myth or Fact?</h2>
+          <p class="lead">Tap a card to flip it and see the truth.</p>
+        </div>
+        <div class="flip-grid">
+          <button class="flip reveal" aria-label="Flip card">
+            <div class="flip-inner">
+              <div class="flip-front"><span class="tag tag-myth">MYTH</span><p>"It's a family matter. Outsiders shouldn't get involved."</p></div>
+              <div class="flip-back"><span class="tag tag-fact">FACT</span><p>VAWC is a <strong>public crime</strong>. Under RA 9262, any person who knows about the abuse may file a complaint.</p></div>
+            </div>
+          </button>
+          <button class="flip reveal" aria-label="Flip card">
+            <div class="flip-inner">
+              <div class="flip-front"><span class="tag tag-myth">MYTH</span><p>"If there are no bruises, it isn't abuse."</p></div>
+              <div class="flip-back"><span class="tag tag-fact">FACT</span><p>Psychological and economic abuse are crimes too. Emotional violence is the <strong>most common</strong> form reported by Filipino women.</p></div>
+            </div>
+          </button>
+          <button class="flip reveal" aria-label="Flip card">
+            <div class="flip-inner">
+              <div class="flip-front"><span class="tag tag-myth">MYTH</span><p>"It only counts if you're married."</p></div>
+              <div class="flip-back"><span class="tag tag-fact">FACT</span><p>RA 9262 covers <strong>dating relationships</strong>, ex-partners, live-in partners, and the father of a woman's child.</p></div>
+            </div>
+          </button>
+          <button class="flip reveal" aria-label="Flip card">
+            <div class="flip-inner">
+              <div class="flip-front"><span class="tag tag-myth">MYTH</span><p>"Hitting is just discipline for children."</p></div>
+              <div class="flip-back"><span class="tag tag-fact">FACT</span><p>Physical and psychological violence harm a child's development. Most physical violence against Filipino children happens <strong>at home</strong>.</p></div>
+            </div>
+          </button>
+          <button class="flip reveal" aria-label="Flip card">
+            <div class="flip-inner">
+              <div class="flip-front"><span class="tag tag-myth">MYTH</span><p>"She provoked him, so it's partly her fault."</p></div>
+              <div class="flip-back"><span class="tag tag-fact">FACT</span><p>No one deserves to be abused. The <strong>abuser alone</strong> is responsible for choosing violence.</p></div>
+            </div>
+          </button>
+          <button class="flip reveal" aria-label="Flip card">
+            <div class="flip-inner">
+              <div class="flip-front"><span class="tag tag-myth">MYTH</span><p>"Why doesn't she just leave?"</p></div>
+              <div class="flip-back"><span class="tag tag-fact">FACT</span><p>Fear, financial dependence, children, and shame make leaving hard and dangerous. Support — not judgment — helps.</p></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SELF CHECK ========== -->
+    <section class="section" id="check">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Interactive</p>
+          <h2>Relationship self-check</h2>
+          <p class="lead">Does your partner (or someone close to you) do any of these? Answers stay on your device and are not saved or sent anywhere.</p>
+        </div>
+        <form class="quiz reveal" id="quiz">
+          <label class="q"><input type="checkbox"> Checks your phone, messages, or social media without permission</label>
+          <label class="q"><input type="checkbox"> Gets angry or jealous when you spend time with friends or family</label>
+          <label class="q"><input type="checkbox"> Insults, humiliates, or shouts at you, in private or in public</label>
+          <label class="q"><input type="checkbox"> Controls your money, or stops you from working or studying</label>
+          <label class="q"><input type="checkbox"> Threatens to hurt you, your children, your pets, or themself</label>
+          <label class="q"><input type="checkbox"> Pushes, slaps, grabs, or hits you</label>
+          <label class="q"><input type="checkbox"> Pressures or forces you into sexual acts you don't want</label>
+          <label class="q"><input type="checkbox"> Makes you feel afraid to disagree or say no</label>
+          <div class="quiz-actions">
+            <button type="submit" class="btn btn-primary">See result</button>
+            <button type="reset" class="btn btn-ghost-dark" id="quizReset">Clear</button>
+          </div>
+          <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== HELP ========== -->
+    <section class="section section-dark" id="help">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">You are not alone</p>
+          <h2>Where to get help</h2>
+          <p class="lead">On a phone, tap a number to call. If you are in immediate danger, call <strong>911</strong>.</p>
+        </div>
+
+        <div class="hotline-grid">
+          <a class="hotline urgent reveal" href="tel:911">
+            <span class="hl-name">National Emergency Hotline</span>
+            <span class="hl-num">911</span>
+            <span class="hl-note">For immediate danger</span>
+          </a>
+          <a class="hotline reveal" href="tel:09197777377">
+            <span class="hl-name">PNP Aleng Pulis Hotline</span>
+            <span class="hl-num">0919-777-7377</span>
+            <span class="hl-note">Also: 0966-725-5961</span>
+          </a>
+          <a class="hotline reveal" href="tel:0285256028">
+            <span class="hl-name">NBI – VAWC Desk</span>
+            <span class="hl-num">(02) 8525-6028</span>
+            <span class="hl-note">Investigation assistance</span>
+          </a>
+          <a class="hotline reveal" href="tel:0287330010">
+            <span class="hl-name">DSWD-NCR Ugnayan Pag-asa Crisis Center</span>
+            <span class="hl-num">(02) 8733-0010</span>
+            <span class="hl-note">Crisis intervention &amp; shelter</span>
+          </a>
+          <a class="hotline reveal" href="tel:09178998727">
+            <span class="hl-name">National Center for Mental Health</span>
+            <span class="hl-num">0917-899-8727</span>
+            <span class="hl-note">Crisis &amp; emotional support</span>
+          </a>
+          <div class="hotline hotline-static reveal">
+            <span class="hl-name">Walk in</span>
+            <span class="hl-num hl-num-sm">Barangay VAW Desk</span>
+            <span class="hl-note">or the Women &amp; Children Protection Desk at your nearest police station</span>
+          </div>
+        </div>
+        <p class="source-tag light">Hotlines from DSWD and the Philippine Commission on Women <a href="#ref-11">[11]</a> <a href="#ref-12">[12]</a>. Numbers can change — verify on official websites.</p>
+
+        <div class="steps reveal">
+          <h3>If someone tells you they are being abused</h3>
+          <ol>
+            <li><strong>Listen and believe.</strong> Don't blame, judge, or pressure them.</li>
+            <li><strong>Tell them it's not their fault.</strong> Remind them that help exists.</li>
+            <li><strong>Share the hotlines</strong> and offer to go with them to the Barangay VAW Desk.</li>
+            <li><strong>Respect their pace</strong> — but if a child or anyone is in immediate danger, call 911.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PLEDGE ========== -->
+    <section class="section section-tint" id="pledge">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Take action</p>
+          <h2>Take the pledge</h2>
+          <p class="lead">I pledge to speak up against violence, to respect the rights of women and children, and to support survivors without judgment.</p>
+        </div>
+        <form class="pledge-form reveal" id="pledgeForm">
+          <input type="text" id="pledgeName" maxlength="40" placeholder="Your first name or initials" aria-label="Your name" required>
+          <button type="submit" class="btn btn-primary">I pledge</button>
+        </form>
+        <p class="pledge-count reveal"><span id="pledgeCount">0</span> pledge(s) made on this device</p>
+        <ul class="pledge-wall" id="pledgeWall"></ul>
+      </div>
+    </section>
+
+    <!-- ========== REFERENCES ========== -->
+    <section class="section" id="references">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Sources</p>
+          <h2>References</h2>
+        </div>
+        <ol class="refs">
+          <li id="ref-1">Philippine Statistics Authority. (2025). <em>SDG Goal 5 indicators: Percentage of women age 15–49 who have ever experienced violence committed by their husband/partner (2022 NDHS)</em>. PSA Region III. <a href="https://rsso03.psa.gov.ph/sites/default/files/2025-05/Goal-5.pdf" target="_blank" rel="noopener">https://rsso03.psa.gov.ph/sites/default/files/2025-05/Goal-5.pdf</a></li>
+          <li id="ref-2">Philippine Statistics Authority. (2024). <em>Violence against women: 2024 fact sheet on women and men in the Philippines</em>. <a href="https://psa.gov.ph/sites/default/files/phdsd/Violence%20Against%20Women%202024%20Fact%20Sheet%20on%20Women%20and%20Men.pdf" target="_blank" rel="noopener">https://psa.gov.ph/sites/default/files/phdsd/Violence Against Women 2024 Fact Sheet on Women and Men.pdf</a></li>
+          <li id="ref-3">Ramiro, L. S., Madrid, B. J., Norton-Staal, S., Cajayon-Uy, M. M., &amp; Luna, P. B. National Baseline Study on Violence against Children and Youth (NBS-VAC) in the Philippines. <em>Acta Medica Philippina, 56</em>(15). <a href="https://doi.org/10.47895/amp.v56i15.5062" target="_blank" rel="noopener">https://doi.org/10.47895/amp.v56i15.5062</a></li>
+          <li id="ref-4">Republic Act No. 9262. (2004). <em>Anti-Violence Against Women and Their Children Act of 2004</em>. <a href="https://lawphil.net/statutes/repacts/ra2004/ra_9262_2004.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2004/ra_9262_2004.html</a></li>
+          <li id="ref-5">Inquirer News. (2016). <em>CWC, Unicef bare results of national study on child abuse</em>. <a href="https://newsinfo.inquirer.net/851437/cwc-unicef-bare-results-of-national-study-on-child-abuse" target="_blank" rel="noopener">https://newsinfo.inquirer.net/851437/cwc-unicef-bare-results-of-national-study-on-child-abuse</a></li>
+          <li id="ref-6">Republic Act No. 7610. (1992). <em>Special Protection of Children Against Abuse, Exploitation and Discrimination Act</em>. <a href="https://lawphil.net/statutes/repacts/ra1992/ra_7610_1992.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra1992/ra_7610_1992.html</a></li>
+          <li id="ref-7">Republic Act No. 9710. (2009). <em>The Magna Carta of Women</em>. <a href="https://lawphil.net/statutes/repacts/ra2009/ra_9710_2009.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2009/ra_9710_2009.html</a></li>
+          <li id="ref-8">Republic Act No. 11313. (2019). <em>Safe Spaces Act</em>. <a href="https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html</a></li>
+          <li id="ref-9">Republic Act No. 11648. (2022). <em>An Act Providing for Stronger Protection Against Rape and Sexual Exploitation and Abuse, Increasing the Age for Determining the Commission of Statutory Rape</em>. <a href="https://lawphil.net/statutes/repacts/ra2022/ra_11648_2022.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2022/ra_11648_2022.html</a></li>
+          <li id="ref-10">Republic Act No. 11930. (2022). <em>Anti-Online Sexual Abuse or Exploitation of Children (OSAEC) and Anti-Child Sexual Abuse or Exploitation Materials (CSAEM) Act</em>. <a href="https://lawphil.net/statutes/repacts/ra2022/ra_11930_2022.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2022/ra_11930_2022.html</a></li>
+          <li id="ref-11">Department of Social Welfare and Development. <em>DSWD urges public to "break the silence" by reporting cases of violence against women</em>. <a href="https://dswd.gov.ph/?p=107885" target="_blank" rel="noopener">https://dswd.gov.ph/?p=107885</a></li>
+          <li id="ref-12">Department of Social Welfare and Development. <em>DSWD continues to provide services for VAWC victim-survivors</em> (list of VAWC service providers). <a href="https://www.dswd.gov.ph/?p=74649" target="_blank" rel="noopener">https://www.dswd.gov.ph/?p=74649</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="logo footer-logo"><span class="logo-mark">◐</span> Basag<span class="logo-accent">Katahimikan</span></p>
+        <p>A Gender and Society midterm project promoting awareness, equality, and protection for women and children.</p>
+      </div>
+      <div>
+        <p class="footer-title">Group Members</p>
+        <ul class="members">
+          <li>Jessa G. Garais</li>
+          <li>Hanna Neri</li>
+          <li>Paolo G. Geva</li>
+          <li>Diosa Gavanzo</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Emergency</p>
+        <p><a href="tel:911">911</a> · <a href="tel:09197777377">Aleng Pulis 0919-777-7377</a></p>
+        <p class="small">Tip: press <kbd>Esc</kbd> twice or tap "Quick Exit" to leave this site fast.</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Basag Katahimikan · For educational purposes</p>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
