@@ -187,6 +187,18 @@ button { font: inherit; cursor: pointer; }
 .form-card.open .form-more { max-height: 300px; margin-top: 12px; }
 .form-more li { margin-bottom: 6px; }
 
+/* Card photos */
+.form-card { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; }
+.form-img {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 12px; margin-bottom: 16px;
+}
+.img-physical { object-position: center 70%; }
+.img-sexual { object-position: center 60%; }
+.img-psychological { object-position: center 25%; }
+.img-economic { object-position: center 50%; }
+
 /* ---------- Stats ---------- */
 .stats-grid { display: grid; gap: 16px; margin-bottom: 32px; }
 .stat {
